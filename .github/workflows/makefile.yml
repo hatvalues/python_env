@@ -14,8 +14,17 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Make all
-      run: make all
+    - name: Make Install
+      run: make install
+
+    - name: Make Format
+      run: make format
+
+    - name: Make Lint
+      run: make lint
+
+    - name: Make Test
+      run: make test
 
     - name: Revision
       run: echo "${{ github.sha }}" > REVISION
