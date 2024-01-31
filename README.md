@@ -22,8 +22,10 @@
 
 `vim ~/.bashrc` I [insert mode]
 
-add an alias
+add an alias:
+
 alias python="/usr/local/bin/python3.11"
+
 source ~/.venv/bin/activate
 
 `python -m venv ~/.venv`
