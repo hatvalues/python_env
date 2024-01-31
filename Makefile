@@ -1,13 +1,16 @@
 install:
-	pip install --upgrade pip && pip install -r requirements.txt
+	python -m pip install --upgrade pip && python -m pip install -r requirements.txt
 
 test:
 	python -m pytest
 
 lint:
-	pylint ./
+	/home/codespace/.venv/bin/pylint --disable=R,C ./
+
+format:
+	black *.py
 
 clean:
 	rm -rf __pycache__
 
-all: setup lint test clean
+all: install lint clean format test
