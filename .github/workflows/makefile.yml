@@ -14,5 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Install dependencies
-      run: make
+    - name: Make all
+      run: make all
+
+    - name: Revision
+      run: echo "${{ github.sha }}" > REVISION
