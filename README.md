@@ -1,4 +1,6 @@
-# python_env
+# A Codespaces Environment
+
+This repo has been set up for codespaces. A newer version of Python is installed and the terminal configured with venv.
 
 ## Steps to Reproduce
 `sudo apt-get update`
