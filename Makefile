@@ -5,7 +5,7 @@ test:
 	python -m pytest
 
 lint:
-	/home/codespace/.venv/bin/pylint --disable=R,C ./
+	pylint --disable=R,C ./
 
 format:
 	black *.py
