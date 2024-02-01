@@ -1,0 +1,11 @@
+version: 0.2
+# AWS CODE BUILD FILE
+phases:
+  install:
+    commands:
+      - make install
+  build:
+    commands:
+      - make format
+      - make lint
+      - make test
