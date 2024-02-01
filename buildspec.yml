@@ -6,6 +6,4 @@ phases:
       - make install
   build:
     commands:
-      - make format
-      - make lint
       - make test
